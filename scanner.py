@@ -19,6 +19,22 @@ def gatherStats(cyphertext):
 def printStats():
     return
 
+def buildFracCyphers(num):
+    return 
+
+def buildPercentageTable(cyphertext, keyLength = 1):
+    clen = len(cyphertext)
+    charMap = gatherStats(cyphertext)
+    pcgMap = {}
+    for c in charMap:
+        pctg = (charMap[c]/clen)*100
+        pcgMap[c] = pctg
+    
+    
+def removeKey(dict, key):
+    newDict = dict(d)
+    del newDict(key)
+    return newDict
 
 cyphertext = getCyphertext("theText1.txt").upper()
 basicStats(cyphertext)

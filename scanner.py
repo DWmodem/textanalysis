@@ -110,5 +110,5 @@ def pmfl_kl(mpktFracs):
 alphabet = string.ascii_uppercase
 
 cyphertext = getCyphertext("theText1.txt").upper()
-pmfl_kl(mpkt_fracs(cyphertext, alphabet, 3500))
+pmfl_kl(mpkt_fracs(cyphertext, alphabet, 40))
 
